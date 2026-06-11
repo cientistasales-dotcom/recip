@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reciclar é Transformar</title>
+
+<style>
+body{
+    margin:0;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:20px;
+}
+</style>
+</style>
+</head>
+<body>
+
+<div id="container">
+    <img id="foto">
+    <p id="texto"></p>
+</div>
+
+<script>
+
+const cards = [
+
+{
+    imagem:"https://i.imgur.com/wZUWICx.jpeg",
+    texto:"Uma garrafa plástica pode levar mais de 400 anos para se decompor."
+},
+
+{
+    imagem:"https://i.imgur.com/6cXlDTz.jpeg",
+    texto:"Cerca de 8 milhões de toneladas de plástico chegam aos oceanos todos os anos."
+},
+
+{
+    imagem:"https://i.imgur.com/tDYSaoi.jpeg",
+    texto:"Apenas 9% de todo o plástico produzido já foi reciclado."
+},
+
+{
+    imagem:"https://i.imgur.com/ygK5qPN.jpeg",
+    texto:"O plástico descartado hoje pode permanecer no ambiente por séculos."
+},
+
+{
+    imagem:"https://i.imgur.com/K1J0OY0.jpeg",
+    texto:"Mais de 100 mil animais marinhos morrem anualmente por causa do plástico."
+},
+
+{
+    imagem:"https://i.imgur.com/ayJEXNI.jpeg",
+    texto:"Uma única garrafa PET pode ganhar diversas novas vidas através da reciclagem."
+},
+
+{
+    imagem:"https://i.imgur.com/g8sWLnc.jpeg",
+    texto:"Separar corretamente o plástico reduz a quantidade de lixo nos aterros."
+},
+
+{
+    imagem:"https://i.imgur.com/ShjB7Ph.jpeg",
+    texto:"Até 2050 pode haver mais plástico do que peixes nos oceanos."
+},
+
+{
+    imagem:"https://i.imgur.com/8T8nNFe.jpeg",
+    texto:"O plástico reciclado pode virar roupas, móveis e até equipamentos urbanos."
+},
+
+{
+    imagem:"https://i.imgur.com/aYiB2iy.jpeg",
+    texto:"Cada embalagem reciclada representa menos extração de petróleo."
+},
+
+{
+    imagem:"https://i.imgur.com/P6uc7dL.jpeg",
+    texto:"O plástico é produzido principalmente a partir de derivados do petróleo."
+},
+
+{
+    imagem:"https://i.imgur.com/la5LE1l.jpeg",
+    texto:"Reciclar uma garrafa hoje ajuda a preservar os recursos do amanhã."
+},
+
+{
+    imagem:"https://i.imgur.com/PKH8y0t.jpeg",
+    texto:"Pequenas atitudes diárias geram grandes impactos ambientais."
+},
+
+{
+    imagem:"https://i.imgur.com/qX83wdj.jpeg",
+    texto:"O descarte correto evita que resíduos cheguem aos rios e mares."
+},
+
+{
+    imagem:"https://i.imgur.com/VOV8lgg.jpeg",
+    texto:"Milhões de toneladas de plástico ainda acabam em lixões e áreas irregulares."
+},
+
+{
+    imagem:"https://i.imgur.com/xhDNgNY.jpeg",
+    texto:"Reciclar plástico economiza energia e reduz emissões de carbono."
+},
+
+{
+    imagem:"https://i.imgur.com/kePfUqt.jpeg",
+    texto:"Uma embalagem reciclada hoje pode se transformar em um novo produto amanhã."
+},
+
+{
+    imagem:"https://i.imgur.com/G7sehR6.jpeg",
+    texto:"A reciclagem ajuda a reduzir a poluição e proteger a biodiversidade."
+},
+
+{
+    imagem:"https://i.imgur.com/CXdGvdH.jpeg",
+    texto:"Cada item separado corretamente faz diferença para o planeta."
+},
+
+{
+    imagem:"https://i.imgur.com/fbJrULZ.jpeg",
+    texto:"Reciclar não é descartar. É transformar."
+}
+
+];
+
+const card = cards[Math.floor(Math.random() * cards.length)];
+
+document.getElementById("foto").src = card.imagem;
+document.getElementById("texto").innerText = card.texto;
+
+</script>
+
+</body>
+</html>
